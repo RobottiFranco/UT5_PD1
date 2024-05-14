@@ -1,0 +1,18 @@
+Casos de prueba insertar:
+- Intentar insertar un nodo como hijo de uno que no pertenece al arbol. Debe devolver falso.
+- Intentar insertar un nodo como hijo de uno perteneciente al arbol. Debe devolver verdadero.
+- Intentar insertar un nodo en un subarbol extenso conocido como hijo de uno perteneciente al subarbol. Debe devolver verdadero.
+- Intentar insertar un nodo en un subarbol extenso conocido como hijo de uno no perteneciente al subarbol. Debe devolver falso.
+- Intentar insertar un nodo con etiqueta padre distinta a "" en un arbol vacio. Debe devolver falso y el arbol seguir vacio.
+- Intentar insertar un nodo con etiqueta padre "" en un arbol vacio. Debe devolver verdadero y el arbol ahora tener raiz.
+- Intentar insertar un nodo con etiqueta padre "" en un arbol extenso conocido. Debe devolver verdadero y ahora la raiz del arbol no tener hijo ni hermano.
+
+Casos de prueba buscar:
+- Intentar buscar un nodo en un subarbol conocido que lo contenga. Debe devolver verdadero.
+- Intentar buscar un nodo en un subarbol conocido que no lo contenga. Debe devolver falso.
+- Intentar buscar un nodo en un arbol vacio. Debe devolver siempre falso.
+
+Casos de prueba listarIndentado:
+- Listar un subarbol con solo un nivel distinto de la raiz. Debe listar todos sus elementos con la misma indentacion.
+- Listar un subarbol extenso conocido. Debe listar todos sus elementos indentados por nivel
+- Listar un arbol vacio. No debe listar nada.

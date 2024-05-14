@@ -1,0 +1,42 @@
+Pseudocodigo:
+
+Nodo:
+
+Com
+insertar(unaEtiqueta, etiquetaPadre):
+    Si (etiqueta = etiquetaPadre)
+        hijo <- hijoIzquierdo
+        Mientras (hijo.hermanoDerecho <> nulo)
+            hijo <- hijo.hermanoDerecho
+        FinMientras
+        hijo.HermanoDerecho(Nuevo Tipo ElementoAG (unaEtiqueta))
+        devolver Verdadero
+    FinSi
+    Si (hermanoDerecho <> nulo)
+        insersionHermano <- hermanoDerecho.insertar(unaEtiqueta, etiquetaPadre)
+        Si (insercionHermano)
+            devolver Verdadero
+        FinSi
+    FinSi
+    Si (hijoIzquierdo <> nulo)
+        insersionHijo <- hijoIzquierdo.insertar(unaEtiqueta, etiquetaPadre)
+        Si (insercionHijo)
+            devolver Verdadero
+        FinSi
+    FinSi
+    devolver Falso
+Fin
+
+
+Arbol:
+
+insertar(unaEtiqueta, etiquetaPadre):
+    Si (etiquetaPadre = "")
+        raiz <- Nuevo Tipo ElementoAG (unaEtiqueta)
+    FinSi
+    Si (raiz = nulo)
+        devolver Falso
+    SiNo
+        devolver raiz.insertar(unaEtiqueta, etiquetaPadre)
+    FinSi
+
